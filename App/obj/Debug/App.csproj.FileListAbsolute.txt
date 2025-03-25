@@ -1,0 +1,7 @@
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\obj\Debug\App.csproj.AssemblyReference.cache
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\bin\Debug\App.exe.config
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\bin\Debug\App.exe
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\bin\Debug\App.pdb
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\obj\Debug\App.exe
+D:\Second Semester\OOP\OOP PROJECT\AppV2\App\App\obj\Debug\App.pdb
