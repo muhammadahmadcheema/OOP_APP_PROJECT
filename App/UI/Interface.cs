@@ -65,11 +65,11 @@ namespace App.UI
             string password = Console.ReadLine();
 
             Users foundUser = null;
-            for (int i = 0; i < Users.users.Count; i++)
+            for (int i = 0; i < DL.UsersCRUD.users.Count; i++)
             {
-                if (Users.users[i].username == username && Users.users[i].password == password)
+                if (DL.UsersCRUD.users[i].username == username && DL.UsersCRUD.users[i].password == password)
                 {
-                    foundUser = Users.users[i];
+                    foundUser = DL.UsersCRUD.users[i];
                     break;
                 }
             }
@@ -84,7 +84,7 @@ namespace App.UI
                 }
                 else if (foundUser.IsEmployee())
                 {
-                    EmployeeMenu();
+                    EmployeeMenu(Products.products);
                 }
             }
             else
@@ -97,26 +97,7 @@ namespace App.UI
 
         //READ DATA
 
-        public static void ReadData(string path, List<Users> users)
-        {
-            users.Clear();
-
-            if (File.Exists(path))
-            {
-                using (StreamReader file = new StreamReader(path))
-                {
-                    string line;
-                    while ((line = file.ReadLine()) != null)
-                    {
-                        string[] parts = line.Split(',');
-                        if (parts.Length >= 3)
-                        {
-                            users.Add(new Users(parts[0], parts[1], parts[2]));
-                        }
-                    }
-                }
-            }
-        }
+        
 
         //SIGNUP
 
@@ -151,16 +132,7 @@ namespace App.UI
 
         //WRITE DATA
 
-        public static void WriteData(string path, List<Users> users)
-        {
-            using (StreamWriter file = new StreamWriter(path, false))
-            {
-                foreach (Users user in users)
-                {
-                    file.WriteLine($"{user.username},{user.password},{user.role}");
-                }
-            }
-        }      
+             
 
         //MANAGER MENU
 
@@ -249,15 +221,8 @@ namespace App.UI
 
             if (option == "4")
             {
-                if (products.Count == 0)
-                {
-                    Console.WriteLine("\nNo products have been added yet.");
-                }
-                else
-                {
-                    DL.ProductsCRUD.DisplayProducts();
-                }
-
+                
+                DL.ProductsCRUD.DisplayProducts();
                 Console.WriteLine("\nPress any key to return to Manager Menu...");
                 Console.ReadKey();
                 ManagerMenu(products);
@@ -265,15 +230,9 @@ namespace App.UI
 
             if (option == "5")
             {
-                if (products.Count == 0)
-                {
-                    Console.WriteLine("\nNo products have been added yet.");
-                }
-                else
-                {
-                    Console.WriteLine("\nCurrent Sales:");
-                    DL.ProductsCRUD.ShowSales();
-                }
+                Console.WriteLine("\nCurrent Sales:");
+                DL.ProductsCRUD.ShowSales();
+                
                 Console.WriteLine("\nPress any key to return to Manager Menu...");
                 Console.ReadKey();
                 ManagerMenu(products);
@@ -320,7 +279,7 @@ namespace App.UI
 
         //EMPLOYEE MENU
 
-        public static void EmployeeMenu()
+        public static void EmployeeMenu(List<Products> products)
         {
             string option;
             Console.Clear();
@@ -335,12 +294,33 @@ namespace App.UI
             Console.WriteLine("8. Go Back to Login Page");
             Console.Write("Enter your choice: ");
             option = Console.ReadLine();
+
+            if(option == "1")
+            {
+                DL.ProductsCRUD.DisplayProducts();
+                Console.WriteLine("\nPress any key to return to Employee Menu...");
+                Console.ReadKey();
+                EmployeeMenu(products);
+            }
+
+            if (option == "2")
+            {
+                Console.Write("\nEnter the name of the product to add sales for: ");
+                string salesforproduct = Console.ReadLine();
+                DL.ProductsCRUD.AddSales(salesforproduct);
+
+
+                Console.WriteLine("\nPress any key to return to Employee Menu...");
+                Console.ReadKey();
+                EmployeeMenu(products);
+            }
+
+            if(option == "8")
+            {
+                Program.StartUp();
+            }
         }
-
-
-
-
-
     }
 }
+
 

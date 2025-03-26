@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using App.BL;
+using MySqlX.XDevAPI;
 
 namespace App.DL
 {
     class ProductsCRUD
     {
+
+        public static List<Products> products = new List<Products>();
+
+
         public static void AddProduct(string productName, float productPrice, int productQuantity, int unitsSold)
         {
             BL.Products.products.Add(new Products(productName, productPrice, productQuantity, unitsSold));
+
+            string query = $"INSERT INTO products VALUES('{productName}', '{productPrice}', '{productQuantity}')";
+            DatabaseHelper.Instance.Update(query);
 
         }
 
@@ -21,6 +30,8 @@ namespace App.DL
             if (productToDelete != null)
             {
                 BL.Products.products.Remove(productToDelete);
+                string query = $"DELETE FROM products WHERE product_name = '{productNameToDelete}'";
+                DatabaseHelper.Instance.Update(query);
                 Console.WriteLine($"\nProduct '{productNameToDelete}' deleted successfully!");
             }
             else
@@ -55,24 +66,65 @@ namespace App.DL
                 {
                     productToUpdate.Quantity = int.Parse(quantityInput);
                 }
+
+                string query = $"UPDATE products SET product_name = '{newProductName}', price = '{priceInput}' , quantity = '{quantityInput}'  WHERE product_name = '{productNameToUpdate}'";
+                DatabaseHelper.Instance.Update(query);
             }
         }
 
         public static void DisplayProducts()
         {
+            string query = "SELECT product_name, price, quantity FROM products";
+            var reader = DatabaseHelper.Instance.getData(query);
+
             Console.WriteLine("\nProducts List:");
-            Console.WriteLine("Name\t\tPrice\t\tQuantity\tUnits Sold");
-            foreach (var product in BL.Products.products)
+            Console.WriteLine("Name\t\tPrice\t\tQuantity");
+
+            while (reader.Read())
             {
-                Console.WriteLine($"{product.Name}\t\t{product.Price}\t\t{product.Quantity}\t\t{product.UnitsSold}");
+                string productName = reader["product_name"].ToString();
+                decimal price = Convert.ToDecimal(reader["price"]);
+                int quantity = Convert.ToInt32(reader["quantity"]);
+
+                Console.WriteLine($"{productName}\t\t{price}\t\t{quantity}");
             }
         }
 
         public static void ShowSales()
         {
-            foreach (var product in BL.Products.products)
+            string query = "SELECT product_name, units_sold FROM products";
+            var reader = DatabaseHelper.Instance.getData(query);
+
+            while (reader.Read())
             {
-                Console.WriteLine($"Name: {product.Name}\t Units Sold: {product.UnitsSold} ");
+                Console.WriteLine($"Product Name: {reader["product_name"]}\t Units Sold: {reader["units_sold"]}");
+            }
+        }
+
+        public static void AddSales(string productName)
+        {
+            string checkQuery = $"SELECT product_name FROM products WHERE product_name = '{productName}'";
+            var reader = DatabaseHelper.Instance.getData(checkQuery);
+
+            if (reader.Read())
+            {
+                Console.Write("Enter Units Sold for the Product: ");
+                string input = Console.ReadLine();
+
+                if (!string.IsNullOrEmpty(input) && int.TryParse(input, out int unitsSold))
+                {
+                    string updateQuery = $"UPDATE products SET units_sold = {unitsSold} WHERE product_name = '{productName}'";
+                    DatabaseHelper.Instance.Update(updateQuery);
+                    Console.WriteLine($"Units sold added successfully for product: {productName}");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input! Please enter a valid number.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Product '{productName}' not found.");
             }
         }
 

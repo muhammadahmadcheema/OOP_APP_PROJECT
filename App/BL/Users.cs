@@ -20,7 +20,6 @@ namespace App.BL
             this.role = role;
         }
 
-        public static List<Users> users = new List<Users>();
 
         public bool IsManager()
         {

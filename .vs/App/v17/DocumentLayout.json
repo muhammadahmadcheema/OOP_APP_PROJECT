@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\ui\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\ui\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|d:\\second semester\\oop\\oop project\\appv2\\app\\app\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\bl\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\bl\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\dl\\userscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\app\\dl\\productscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\dl\\productscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|d:\\second semester\\oop\\oop project\\appv2\\app\\app\\ui\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EACDE8-1D51-4E7F-9E8A-64EB7BD03519}|App\\App.csproj|solutionrelative:app\\ui\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ProductsCRUD.cs",
-              "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\ProductsCRUD.cs",
-              "RelativeDocumentMoniker": "App\\DL\\ProductsCRUD.cs",
-              "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\ProductsCRUD.cs",
-              "RelativeToolTip": "App\\DL\\ProductsCRUD.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwEkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T18:28:12.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Interface.cs",
               "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\UI\\Interface.cs",
               "RelativeDocumentMoniker": "App\\UI\\Interface.cs",
               "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\UI\\Interface.cs",
               "RelativeToolTip": "App\\UI\\Interface.cs",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAnwDoBAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACABAAAAAAAAAAAUwDoBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:27:41.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "ProductsCRUD.cs",
+              "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\ProductsCRUD.cs",
+              "RelativeDocumentMoniker": "App\\DL\\ProductsCRUD.cs",
+              "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\ProductsCRUD.cs",
+              "RelativeToolTip": "App\\DL\\ProductsCRUD.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwHMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:28:12.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\Program.cs",
               "RelativeDocumentMoniker": "App\\Program.cs",
               "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\Program.cs",
               "RelativeToolTip": "App\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:26:56.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Users.cs",
               "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\BL\\Users.cs",
               "RelativeDocumentMoniker": "App\\BL\\Users.cs",
               "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\BL\\Users.cs",
               "RelativeToolTip": "App\\BL\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:28:01.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UsersCRUD.cs",
               "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\UsersCRUD.cs",
               "RelativeDocumentMoniker": "App\\DL\\UsersCRUD.cs",
               "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\DL\\UsersCRUD.cs",
               "RelativeToolTip": "App\\DL\\UsersCRUD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:28:20.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Products.cs",
               "DocumentMoniker": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\BL\\Products.cs",
               "RelativeDocumentMoniker": "App\\BL\\Products.cs",
               "ToolTip": "D:\\Second Semester\\OOP\\OOP PROJECT\\AppV2\\App\\App\\BL\\Products.cs",
               "RelativeToolTip": "App\\BL\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:27:52.117Z",
               "EditorCaption": ""

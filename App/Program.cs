@@ -19,18 +19,18 @@ namespace App
         public static void StartUp()
         {
             string choice;
-            UI.Interface.ReadData(UI.Interface.path, Users.users);
+            DL.UsersCRUD.ReadData(UI.Interface.path, DL.UsersCRUD.users);
             Console.Clear();
             choice = UI.Interface.Menu();
 
             switch (choice)
             {
                 case "1":
-                    UI.Interface.SignUp(UI.Interface.path, Users.users);
+                    UI.Interface.SignUp(UI.Interface.path, DL.UsersCRUD.users);
                     StartUp();
                     break;
                 case "2":
-                    UI.Interface.SignIn(Users.users);
+                    UI.Interface.SignIn(DL.UsersCRUD.users);
                     StartUp();
                     break;
                 case "3":
